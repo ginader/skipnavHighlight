@@ -1,4 +1,4 @@
-jQuery Accessible Tabs Plugin
+jQuery SkipNavHighlight Plugin
 =============================
 
 jQuery Plugin that nicely outlines around the targets of the anchors in the given selector.
