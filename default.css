@@ -1,0 +1,35 @@
+#page div:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#page div{
+    zoom:1;
+}
+#navigation li{
+    float:left;
+    list-style-type:none;
+    margin-right:1em;
+    margin-bottom:1em;
+    padding:.5em;
+}
+#content{
+    float:left;
+    width:65%;
+    padding:1em;
+}
+#content p{
+    padding-right:1em;
+}
+#secondary{
+    float:right;
+    width:25%;
+    padding:.5em;
+}
+#secondary ul,
+#secondary li{
+    padding-left:.5em;
+    padding-right:1em;
+}
