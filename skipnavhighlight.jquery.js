@@ -50,6 +50,10 @@
                 });
                 $(this).blur(function () {
                     o.targetOverlay.hide();
+                });  
+                $(this).click(function () {
+                    o.targetOverlay.hide();
+                    $( $($(this)).attr('href') ).attr('tabindex', -1).focus();
                 });                
             });
         }
