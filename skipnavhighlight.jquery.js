@@ -53,7 +53,12 @@
                 });  
                 $(this).click(function () {
                     o.targetOverlay.hide();
-                    $( $($(this)).attr('href') ).attr('tabindex', -1).focus();
+                    $( $($(this)).attr('href') )
+                        .attr('tabindex', -1)
+                        .focus()
+                        .blur(function(){
+                            $(this).removeAttr('tabindex');
+                        });
                 });                
             });
         }
